@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="p-0 m-0">
+<html lang="en" class="p-0 m-0 scroll-smooth">
   <head>
     <title></title>
 
@@ -19,48 +19,52 @@
     />
     <link rel="stylesheet" href="https://use.typekit.net/sph8lvt.css" />
 
-    <!-- Icon Font Stylesheet -->
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css"
-      rel="stylesheet"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
-      rel="stylesheet"
-    />
-
     <link rel="stylesheet" href="output.css" />
   </head>
   <body
-    class="w-screen h-screen max-w-full font-['Poppins'] bg-[url('./images/bg_blurred.jpg')] bg-no-repeat bg-cover bg-fixed bg-center"
+    class="w-screen h-screen max-w-full bg-[url('./images/bg_blurred.jpg')] bg-no-repeat bg-cover bg-fixed bg-center"
   >
-    <!-- Main  -->
-    <nav
-      id="navbar"
-      class="w-full h-20 bg-white text-black px-5 py-2 font-medium fixed text-lg flex justify-between items-center transition-all ease-in duration-300 delay-0"
-    >
-      <img
-        src="./images/logo2.png"
-        alt="nexus logo"
-        id="logo"
-        class="basis-1/6 max-w-[150px] mx-4 my-1 transition-transform ease-linear duration-300 delay-0"
-      />
-      <ul
-        id="list"
-        class="w-full h-full basis-5/6 flex justify-end items-end flex-wrap mb-2"
+    <!-- Header  -->
+    <header>
+      <section
+        class="w-full h-10 t-0 fixed bg-[#112968] flex items-center justify-end text-white font-medium"
       >
-        <li class="px-5">Home</li>
-        <li class="px-5">Services</li>
-        <li class="px-5">Projects</li>
-        <li class="px-5">About Us</li>
-        <li class="pl-5">Contact Us</li>
-      </ul>
-    </nav>
+        <span class="mr-5">989898989</span>
+        <span class="mr-5">howhowhow@gmail.com</span>
+      </section>
+      <nav
+        id="navbar"
+        class="w-full h-20 px-5 py-2 bg-white font-medium fixed top-10 text-[1.125rem] flex justify-between items-center transition-all ease-linear duration-300 delay-0"
+      >
+        <img
+          src="./images/logo2.png"
+          alt="nexus logo"
+          id="logo"
+          class="basis-1/6 max-w-[150px] mx-4 my-1 transition-transform ease-linear duration-300 delay-0"
+        />
+        <ul
+          id="list"
+          class="w-full font-thin text-[#112968] basis-5/6 flex justify-end flex-wrap"
+        >
+          <li class="mx-5">
+            <a class="active_page" href="hello.txt">Home</a>
+          </li>
+          <li class="mx-5"><a class="" href="hello.txt">Services</a></li>
+          <li class="mx-5"><a class="" href="hello.txt">Projects</a></li>
+          <li class="mx-5"><a class="" href="hello.txt">About Us</a></li>
+          <li class="ml-5"><a class="" href="hello.txt">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- Header End  -->
+    <!-- Main  -->
     <main class="w-full h-fit">
       <section
-        class="w-full h-[31rem] px-14 text-white bg-[rgb(0,0,0,0.6)] flex flex-col justify-center items-start"
+        class="w-full h-[39rem] px-14 text-white bg-[rgb(0,0,0,0.6)] flex flex-col justify-center items-start"
       >
-        <h1 class="font-bold text-7xl text-blue-500">Heading</h1>
+        <h1 class="font-bold text-6xl text-blue-500">
+          Troubled with any technical issues?
+        </h1>
         <h3 class="font-semibold m-2">Subheading</h3>
         <div class="bg-red-500 mt-[2.5rem] px-5 py-3 rounded-3xl font-semibold">
           Book Now
@@ -99,6 +103,66 @@
     </main>
 
     <!-- Main end  -->
+
+    <footer class="bg-[#f4f9fc] w-full h-80 flex flex-row">
+      <section class="basis-1/2"><h2>Contact Us</h2></section>
+      <section class="basis-1/2">
+        <h2>Fill out the form below to request service or more information.</h2>
+        <form id="contact" onsubmit="sendEmail(); return false;">
+          <h3>Quick Contact</h3>
+          <h4>Contact us today, and get reply with in 24 hours!</h4>
+
+          <input
+            type="text"
+            class="contact-form-text"
+            placeholder="Your name"
+            id="contactName"
+            required
+          />
+          <br />
+          <input
+            type="email"
+            class="contact-form-text"
+            placeholder="Your email"
+            id="contactEmail"
+            required
+          />
+          <br />
+          <input
+            type="tel"
+            class="contact-form-text"
+            placeholder="Your Phone"
+            id="contactPhone"
+            required
+          />
+
+          <br />
+          <input
+            type="text"
+            class="contact-form-text"
+            id="contactSubject"
+            placeholder="Subject"
+            required
+          />
+          <br />
+          <textarea
+            class="contact-form-message"
+            placeholder="Your message"
+            id="contactMessage"
+          ></textarea>
+          <br />
+          <input
+            type="submit"
+            id="contactSubmit"
+            class="contact-form-btn"
+            value="Send"
+            required
+          />
+        </form>
+      </section>
+    </footer>
   </body>
+
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
   <script src="app.js"></script>
 </html>
