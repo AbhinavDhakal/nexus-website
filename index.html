@@ -19,48 +19,115 @@
     />
     <link rel="stylesheet" href="https://use.typekit.net/sph8lvt.css" />
 
-    <link rel="stylesheet" href="output.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://use.fontawesome.com/3ee3faf1dc.js"></script>
+
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body
-    class="w-screen h-screen max-w-full bg-[url('./images/bg_blurred.jpg')] bg-no-repeat bg-cover bg-fixed bg-center"
+    class="
+      w-screen
+      h-screen
+      max-w-full
+      bg-[url('./images/nexus1.jpg')] bg-no-repeat bg-cover bg-fixed bg-center
+	  font-sans
+    "
   >
     <!-- Header  -->
     <header>
       <section
-        class="w-full h-10 t-0 fixed bg-[#112968] flex items-center justify-end text-white font-medium"
+        class="
+          w-full
+          h-10
+          top-0
+          fixed
+          bg-[#112968]
+          flex
+          items-center
+          justify-end
+          text-white
+          font-medium
+		  z-50
+        "
       >
         <span class="mr-5">989898989</span>
         <span class="mr-5">howhowhow@gmail.com</span>
       </section>
       <nav
         id="navbar"
-        class="w-full h-20 px-5 py-2 bg-white font-medium fixed top-10 text-[1.125rem] flex justify-between items-center transition-all ease-linear duration-300 delay-0"
+        class="
+          w-full
+          h-20
+		  z-50
+          px-5
+          py-2
+          bg-white
+          font-medium
+          fixed
+          top-10
+          text-[1.125rem]
+          flex
+          justify-between
+          items-center
+          transition-all
+          ease-linear
+          duration-300
+          delay-0
+        "
       >
         <img
           src="./images/logo2.png"
           alt="nexus logo"
           id="logo"
-          class="basis-1/6 max-w-[150px] mx-4 my-1 transition-transform ease-linear duration-300 delay-0"
+          class="
+            basis-1/6
+            max-w-[150px]
+            mx-4
+            my-1
+            transition-transform
+            ease-linear
+            duration-300
+            delay-0
+          "
         />
         <ul
           id="list"
-          class="w-full font-thin text-[#112968] basis-5/6 flex justify-end flex-wrap"
+          class="
+            w-full
+            font-thin
+            text-[#777777]
+            basis-5/6
+            flex
+            justify-end
+            flex-wrap
+          "
         >
           <li class="mx-5">
-            <a class="active_page" href="hello.txt">Home</a>
+            <a class="active_page" href="./index.html">Home</a>
           </li>
-          <li class="mx-5"><a class="" href="hello.txt">Services</a></li>
-          <li class="mx-5"><a class="" href="hello.txt">Projects</a></li>
-          <li class="mx-5"><a class="" href="hello.txt">About Us</a></li>
-          <li class="ml-5"><a class="" href="hello.txt">Contact Us</a></li>
+          <li class="mx-5"><a class="" href="./services.html">Services</a></li>
+          <li class="mx-5"><a class="" href="./projects.html">Projects</a></li>
+          <li class="mx-5"><a class="" href="./aboutus.html">About Us</a></li>
+          <li class="ml-5">
+            <a class="" href="./contactus.html">Contact Us</a>
+          </li>
         </ul>
       </nav>
     </header>
     <!-- Header End  -->
     <!-- Main  -->
-    <main class="w-full h-fit">
+    <main class="w-full h-fit mt-[5rem]">
       <section
-        class="w-full h-[39rem] px-14 text-white bg-[rgb(0,0,0,0.6)] flex flex-col justify-center items-start"
+        class="
+          w-full
+          h-[39rem]
+          px-14
+          text-white
+          bg-[rgb(0,0,0,0.6)]
+          flex flex-col
+          justify-center
+          items-start
+        "
       >
         <h1 class="font-bold text-6xl text-blue-500">
           Troubled with any technical issues?
@@ -71,35 +138,142 @@
         </div>
       </section>
       <section class="w-full h-[10rem] bg-[#f4f9fc]">
-        <ul class="w-full h-full flex font-semibold text-stone-700">
-          <li class="basis-1/4 flex flex-col justify-center items-center">
-            <img src="./images/like.png" alt="like" width="50px" />
-            <div class="p-2">Good 1</div>
+        <ul class="w-full h-full flex font-bold items-center ">
+          <li class="w-full h-4/5 basis-1/3 flex justify-center items-center">
+            <div
+              class="
+                w-1/2
+                flex flex-col
+                justify-center
+                items-center
+                cursor-pointer
+                group
+				relative
+              "
+            >
+              <img
+                src="./images/workers.png"
+                alt="like"
+                width="70px"
+                class="group-hover:opacity-0 group-hover:invisible transition-all"
+              />
+              <div class="text-center transition-all group-hover:opacity-0  group-hover:invisible">Top Technical Staffs</div>
+              <div class="absolute invisible opacity-0 transition-all text-center group-hover:opacity-100 group-hover:visible">
+                Our Technical team is ready to provide the best technical
+                service 365 days a year.
+              </div>
+            </div>
           </li>
-          <li class="basis-1/4 flex flex-col justify-center items-center">
-            <img src="./images/like.png" alt="like" width="50px" />
-            <div class="p-2">Good 2</div>
+		  <li class="w-full h-full  basis-1/3 flex justify-center items-center border-x-[0.05rem] border-solid border-[#777777]">
+            <div
+              class="
+                w-1/2
+                flex flex-col
+                justify-center
+                items-center
+                cursor-pointer
+                group
+				relative
+              "
+            >
+              <img
+                src="./images/estimate.png"
+                alt="like"
+                width="70px"
+                class="group-hover:opacity-0 group-hover:invisible transition-all"
+              />
+              <div class="text-center transition-all group-hover:opacity-0  group-hover:invisible">Free Estimate</div>
+              <div class="absolute invisible opacity-0 transition-all text-center group-hover:opacity-100 group-hover:visible">
+               We are ready and available to serve you. Call us now, +977-9855012011, +977-9855053773
+              </div>
+            </div>
           </li>
-          <li class="basis-1/4 flex flex-col justify-center items-center">
-            <img src="./images/like.png" alt="like" width="50px" />
-            <div class="p-2">Good 3</div>
+<li class="w-full h-4/5 basis-1/3 flex justify-center items-center">
+            <div
+              class="
+                w-1/2
+                flex flex-col
+                justify-center
+                items-center
+                cursor-pointer
+                group
+				relative
+				ease-in-out
+				delay-500
+			  "
+            >
+              <img
+                src="./images/calendar.png"
+                alt="like"
+                width="70px"
+                class="group-hover:opacity-0 group-hover:invisible transition-all "
+              />
+              <div class="group-hover:opacity-0 group-hover:invisible transition-all">Available 365 days a year</div>
+
+              <div class="absolute invisible opacity-0 text-center transition-all group-hover:opacity-100 group-hover:visible">
+               Our Technical is ready to provide the best technical service 365 days a year.
+              </div>
+            </div>
           </li>
-          <li class="basis-1/4 flex flex-col justify-center items-center">
-            <img src="./images/like.png" alt="like" width="50px" />
-            <div class="p-2">Good 4</div>
-          </li>
-        </ul>
+
+                  </ul>
       </section>
-      <section class="bg-white">
-        <h1 class="p-14 pb-2 font-bold text-[2rem]">Why Our Services ?</h1>
-        <p class="p-14 pt-1">
-          We are a team of professional engineers, interior designers,
-          electricians, plumbers and other professionals providing the best
-          repair, maintenance, installation and renovation services. We do all
-          types of works related to interior, electrical, plumbing,
-          air-conditioning, etc.
-        </p>
-      </section>
+      <h1 class="text-center bg-white pt-14 pb-5 font-bold text-[2rem]">
+        Why <!-- <span class="text-blue-600 text-[2.2rem]">Nexus</span>
+		<span class="text-red-600">Tech Solution</span> ?--> Nexus Tech Solution
+      </h1>
+
+      <div class="bg-white w-full">
+       
+        <section
+          class="bg-white basis-1/2 flex  justify-center items-center"
+        >
+          <div class="w-full flex flex-wrap justify-evenly p-8">
+            <div class="whyUs">
+
+              <img src="./images/fast-time.png" alt="like" width="70px" class="m-[-1.5rem] z-10"/>
+			  <span> Quick <br> Response</span>
+            </div>
+
+            <div class="whyUs">
+              <img src="./images/satisfaction.png" alt="like" width="70px" class="m-[-1.5rem] z-10"/>
+			  <span >Customer<br> Satisfaction</span>
+            </div>
+
+            <div class="whyUs">
+              <img src="./images/service.png" alt="like" width="70px" class="m-[-1.5rem] z-10"/>
+			  <span >Reliable<br> Service</span>
+            </div>
+            <div class="whyUs">
+              <img src="./images/save-money.png" alt="like" width="70px" class="m-[-1.5rem] z-10"/>
+			  <span>Cost <br>Effective</span>
+            </div>
+
+            <div class="whyUs">
+              <img src="./images/technician.png" alt="like" width="70px" class="m-[-1.5rem] z-10"/>
+			  <span>Skilled<br> Technicians</span>
+            </div>
+
+            <div class="whyUs">
+              <img src="./images/money.png" alt="like" width="70px" class="m-[-1.5rem] z-10"/>
+			  <span>Value<br> for money</span>
+            </div>
+          </div>
+        </section>
+ <section class="basis-1/2 flex justify-center items-center">
+          <p class="m-10 text-center">
+            Our highly trained and skilled Technicians provide quality
+            workmanship under International Electrical Standards.
+            <br />Just A click away, <br />Backed with immense years of industry
+            experience and market understanding, we bring forth for our clients
+            a wide gamut of Advance technical solutions <br />Moreover, we are
+            engaged in proffering Commercial Construction, Site Surveys and
+            Installation in Industry Sectors Services <br />In addition to the
+            workspace, we have recruited a workforce that strives to accomplish
+            the organizational objectives, with increased efficiency
+          </p>
+        </section>
+      </div>
     </main>
 
     <!-- Main end  -->
