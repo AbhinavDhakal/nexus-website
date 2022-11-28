@@ -24,17 +24,20 @@ function stickyNav() {
 
 let navBtn = document.getElementById("navButton");
 let mobNav = document.getElementById("mobNav");
+let navClose = document.getElementById("navClose");
 
-document.getElementById("navClose").addEventListener("click", closeNav);
+navClose.addEventListener("click", closeNav);
 navBtn.addEventListener("click", openNav);
 
 function closeNav() {
   navBtn.classList.remove("hidden");
   list.classList.add("hidden");
+  navClose.classList.add("hidden");
 }
 function openNav() {
   navBtn.classList.add("hidden");
   list.classList.remove("hidden");
+  navClose.classList.remove("hidden");
 }
 
 function sendEmail() {
