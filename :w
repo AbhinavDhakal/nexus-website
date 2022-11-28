@@ -30,7 +30,7 @@
       h-screen
       max-w-full
       bg-[url('./images/nexus1.jpg')] bg-no-repeat bg-cover bg-fixed bg-center
-      font-sans
+	  font-sans
     "
   >
     <!-- Header  -->
@@ -47,7 +47,7 @@
           justify-end
           text-white
           font-medium
-          z-50
+		  z-50
         "
       >
         <span class="mr-5">989898989</span>
@@ -57,8 +57,9 @@
         id="navbar"
         class="
           w-full
-          h-20
-          z-50
+		  md:h-20
+          h-30
+		  z-50
           px-5
           py-2
           bg-white
@@ -80,7 +81,7 @@
           alt="nexus logo"
           id="logo"
           class="
-            basis-1/2
+            basis-1/6
             max-w-[150px]
             mx-4
             my-1
@@ -90,78 +91,42 @@
             delay-0
           "
         />
-        <div id="mobNav" class="md:w-full relative flex items-end justify-end">
-          <button
-            id="navButton"
-            class="
-              block
-              text-gray-700
-              rounded
-              p-2
-              border border-opacity-0 border-[#112968]
-              md:hidden
-              hover:border-opacity-100
-              focus:border focus:bg-gray-100
-            "
-            type="button"
-          >
-            <svg
-              class="w-6 h-5"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M4 6h16M4 12h16M4 18h16"
-              ></path>
-            </svg>
-          </button>
+		<div class="relative">
+		<button class="block md:hidden text-gray-700 p-2 rounded hover:border focus:border focus:bg-gray-100 my-2 mr-5" type="button" aria-controls="navbar-main" aria-expanded="false" aria-label="Toggle navigation" onclick="document.getElementById('list').classList.toggle('hidden')" >
+    <svg class="w-5 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+</button>
+</div>
 
-          <ul
-            id="list"
-            class="
-              absolute
-              font-thin
-              flex-col
-			  text-center
-              bg-red-100
-			  top-[-20px]
-			  w-40
-			  p-2
-              hidden
-              text-[#777777]
-              md:bg-white
-              md:justify-end
-              md:flex-wrap
-              md:w-full
-              md:basis-5/6
-              md:flex
-              md:flex-row
-              md:static
-            "
-          >
-		  <button id="navClose" class="absolute right-2 top-[-1px]">x</button>
 
-            <li class="mx-3">
-              <a class="active_page" href="./index.html">Home</a>
-            </li>
-            <li class="mx-3">
-              <a class="" href="./services.html">Services</a>
-            </li>
-            <li class="mx-3">
-              <a class="" href="./projects.html">Projects</a>
-            </li>
-            <li class="mx-3"><a class="" href="./aboutus.html">About Us</a></li>
-            <li class="mx-3">
-              <a class="" href="./contactus.html">Contact Us</a>
-            </li>
-          </ul>
-        </div>
+
+        <ul
+          id="list"
+          class="
+            md:w-full
+            md:basis-5/6
+			md:flex
+			md:flex-row
+            font-thin
+            text-[#777777]
+            justify-end
+			items-end
+            flex-wrap	
+			flex-col
+			bg-red-100
+          "
+        >
+          <li class="mx-5">
+            <a class="active_page" href="./index.html">Home</a>
+          </li>
+          <li class="mx-5"><a class="" href="./services.html">Services</a></li>
+          <li class="mx-5"><a class="" href="./projects.html">Projects</a></li>
+          <li class="mx-5"><a class="" href="./aboutus.html">About Us</a></li>
+          <li class="ml-5">
+            <a class="" href="./contactus.html">Contact Us</a>
+          </li>
+        </ul>
       </nav>
+	  	  
     </header>
     <!-- Header End  -->
     <!-- Main  -->
@@ -187,7 +152,7 @@
         </div>
       </section>
       <section class="w-full h-[10rem] bg-[#f4f9fc]">
-        <ul class="w-full h-full flex font-bold items-center">
+        <ul class="w-full h-full flex font-bold items-center ">
           <li class="w-full h-4/5 basis-1/3 flex justify-center items-center">
             <div
               class="
@@ -197,53 +162,23 @@
                 items-center
                 cursor-pointer
                 group
-                relative
+				relative
               "
             >
               <img
                 src="./images/workers.png"
                 alt="like"
                 width="70px"
-                class="
-                  group-hover:opacity-0 group-hover:invisible
-                  transition-all
-                "
+                class="group-hover:opacity-0 group-hover:invisible transition-all"
               />
-              <div
-                class="
-                  text-center
-                  transition-all
-                  group-hover:opacity-0 group-hover:invisible
-                "
-              >
-                Top Technical Staffs
-              </div>
-              <div
-                class="
-                  absolute
-                  invisible
-                  opacity-0
-                  transition-all
-                  text-center
-                  group-hover:opacity-100 group-hover:visible
-                "
-              >
+              <div class="text-center transition-all group-hover:opacity-0  group-hover:invisible">Top Technical Staffs</div>
+              <div class="absolute invisible opacity-0 transition-all text-center group-hover:opacity-100 group-hover:visible">
                 Our Technical team is ready to provide the best technical
                 service 365 days a year.
               </div>
             </div>
           </li>
-          <li
-            class="
-              w-full
-              h-full
-              basis-1/3
-              flex
-              justify-center
-              items-center
-              border-x-[0.05rem] border-solid border-[#777777]
-            "
-          >
+		  <li class="w-full h-full  basis-1/3 flex justify-center items-center border-x-[0.05rem] border-solid border-[#777777]">
             <div
               class="
                 w-1/2
@@ -252,43 +187,22 @@
                 items-center
                 cursor-pointer
                 group
-                relative
+				relative
               "
             >
               <img
                 src="./images/estimate.png"
                 alt="like"
                 width="70px"
-                class="
-                  group-hover:opacity-0 group-hover:invisible
-                  transition-all
-                "
+                class="group-hover:opacity-0 group-hover:invisible transition-all"
               />
-              <div
-                class="
-                  text-center
-                  transition-all
-                  group-hover:opacity-0 group-hover:invisible
-                "
-              >
-                Free Estimate
-              </div>
-              <div
-                class="
-                  absolute
-                  invisible
-                  opacity-0
-                  transition-all
-                  text-center
-                  group-hover:opacity-100 group-hover:visible
-                "
-              >
-                We are ready and available to serve you. Call us now,
-                +977-9855012011, +977-9855053773
+              <div class="text-center transition-all group-hover:opacity-0  group-hover:invisible">Free Estimate</div>
+              <div class="absolute invisible opacity-0 transition-all text-center group-hover:opacity-100 group-hover:visible">
+               We are ready and available to serve you. Call us now, +977-9855012011, +977-9855053773
               </div>
             </div>
           </li>
-          <li class="w-full h-4/5 basis-1/3 flex justify-center items-center">
+<li class="w-full h-4/5 basis-1/3 flex justify-center items-center">
             <div
               class="
                 w-1/2
@@ -297,132 +211,70 @@
                 items-center
                 cursor-pointer
                 group
-                relative
-                ease-in-out
-                delay-500
-              "
+				relative
+				ease-in-out
+				delay-500
+			  "
             >
               <img
                 src="./images/calendar.png"
                 alt="like"
                 width="70px"
-                class="
-                  group-hover:opacity-0 group-hover:invisible
-                  transition-all
-                "
+                class="group-hover:opacity-0 group-hover:invisible transition-all "
               />
-              <div
-                class="
-                  group-hover:opacity-0 group-hover:invisible
-                  transition-all
-                "
-              >
-                Available 365 days a year
-              </div>
+              <div class="group-hover:opacity-0 group-hover:invisible transition-all">Available 365 days a year</div>
 
-              <div
-                class="
-                  absolute
-                  invisible
-                  opacity-0
-                  text-center
-                  transition-all
-                  group-hover:opacity-100 group-hover:visible
-                "
-              >
-                Our Technical is ready to provide the best technical service 365
-                days a year.
+              <div class="absolute invisible opacity-0 text-center transition-all group-hover:opacity-100 group-hover:visible">
+               Our Technical is ready to provide the best technical service 365 days a year.
               </div>
             </div>
           </li>
-        </ul>
+
+                  </ul>
       </section>
       <h1 class="text-center bg-white pt-14 pb-5 font-bold text-[2rem]">
-        Why
-        <!-- <span class="text-blue-600 text-[2.2rem]">Nexus</span>
-		<span class="text-red-600">Tech Solution</span> ?-->
-        Nexus Tech Solution
+        Why <!-- <span class="text-blue-600 text-[2.2rem]">Nexus</span>
+		<span class="text-red-600">Tech Solution</span> ?--> Nexus Tech Solution
       </h1>
 
       <div class="bg-white w-full">
-        <section class="bg-white basis-1/2 flex justify-center items-center">
+       
+        <section
+          class="bg-white basis-1/2 flex  justify-center items-center"
+        >
           <div class="w-full flex flex-wrap justify-evenly p-8">
             <div class="whyUs">
-              <img
-                src="./images/fast-time.png"
-                alt="like"
-                width="70px"
-                class="m-[-1.5rem] z-10"
-              />
-              <span>
-                Quick <br />
-                Response</span
-              >
+
+              <img src="./images/fast-time.png" alt="like" width="70px" class="m-[-1.5rem] z-10"/>
+			  <span> Quick <br> Response</span>
             </div>
 
             <div class="whyUs">
-              <img
-                src="./images/satisfaction.png"
-                alt="like"
-                width="70px"
-                class="m-[-1.5rem] z-10"
-              />
-              <span
-                >Customer<br />
-                Satisfaction</span
-              >
+              <img src="./images/satisfaction.png" alt="like" width="70px" class="m-[-1.5rem] z-10"/>
+			  <span >Customer<br> Satisfaction</span>
             </div>
 
             <div class="whyUs">
-              <img
-                src="./images/service.png"
-                alt="like"
-                width="70px"
-                class="m-[-1.5rem] z-10"
-              />
-              <span
-                >Reliable<br />
-                Service</span
-              >
+              <img src="./images/service.png" alt="like" width="70px" class="m-[-1.5rem] z-10"/>
+			  <span >Reliable<br> Service</span>
             </div>
             <div class="whyUs">
-              <img
-                src="./images/save-money.png"
-                alt="like"
-                width="70px"
-                class="m-[-1.5rem] z-10"
-              />
-              <span>Cost <br />Effective</span>
+              <img src="./images/save-money.png" alt="like" width="70px" class="m-[-1.5rem] z-10"/>
+			  <span>Cost <br>Effective</span>
             </div>
 
             <div class="whyUs">
-              <img
-                src="./images/technician.png"
-                alt="like"
-                width="70px"
-                class="m-[-1.5rem] z-10"
-              />
-              <span
-                >Skilled<br />
-                Technicians</span
-              >
+              <img src="./images/technician.png" alt="like" width="70px" class="m-[-1.5rem] z-10"/>
+			  <span>Skilled<br> Technicians</span>
             </div>
 
             <div class="whyUs">
-              <img
-                src="./images/money.png"
-                alt="like"
-                width="70px"
-                class="m-[-1.5rem] z-10"
-              />
-              <span
-                >Value<br />
-                for money</span
-              >
+              <img src="./images/money.png" alt="like" width="70px" class="m-[-1.5rem] z-10"/>
+			  <span>Value<br> for money</span>
             </div>
           </div>
         </section>
-        <section class="basis-1/2 flex justify-center items-center">
+ <section class="basis-1/2 flex justify-center items-center">
           <p class="m-10 text-center">
             Our highly trained and skilled Technicians provide quality
             workmanship under International Electrical Standards.
