@@ -32,11 +32,13 @@ navBtn.addEventListener("click", openNav);
 function closeNav() {
   navBtn.classList.remove("hidden");
   list.classList.add("hidden");
+  list.classList.remove("flex");
   navClose.classList.add("hidden");
 }
 function openNav() {
   navBtn.classList.add("hidden");
   list.classList.remove("hidden");
+  list.classList.add("flex");
   navClose.classList.remove("hidden");
 }
 

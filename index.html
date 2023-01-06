@@ -25,84 +25,30 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body
-    class="
-      w-screen
-      h-screen
-      max-w-full
-      bg-[url('./images/nexus1.jpg')] bg-no-repeat bg-cover bg-fixed bg-center
-      font-sans
-    "
+    class="w-screen h-screen max-w-full bg-[url('./images/bg_blurred.jpg')] bg-no-repeat bg-cover bg-fixed bg-center font-sans"
   >
     <!-- Header  -->
     <header>
       <section
-        class="
-          w-full
-          h-10
-          top-0
-          fixed
-          bg-[#112968]
-          flex
-          items-center
-          justify-end
-          text-white
-          font-medium
-          z-50
-        "
+        class="w-full h-10 top-0 fixed bg-[#112968] flex items-center justify-end text-white font-medium z-50"
       >
         <span class="mr-5">989898989</span>
         <span class="mr-5">howhowhow@gmail.com</span>
       </section>
       <nav
         id="navbar"
-        class="
-          w-full
-          h-20
-          z-50
-          px-5
-          py-2
-          bg-white
-          font-medium
-          fixed
-          top-10
-          text-[1.125rem]
-          flex
-          justify-between
-          items-center
-          transition-all
-          ease-linear
-          duration-300
-          delay-0
-        "
+        class="w-full h-20 z-50 px-5 py-2 bg-white font-medium fixed top-10 text-[1.125rem] flex justify-between items-center transition-all ease-linear duration-300 delay-0 shadow-[0_2px_6px_0_rgba(0,0,0,.12),inset_0_-1px_0_0_#dadce0]"
       >
         <img
           src="./images/logo2.png"
           alt="nexus logo"
           id="logo"
-          class="
-            basis-1/2
-            max-w-[150px]
-            mx-4
-            my-1
-            transition-transform
-            ease-linear
-            duration-300
-            delay-0
-          "
+          class="basis-1/2 max-w-[150px] mx-4 my-1 transition-transform ease-linear duration-300 delay-0"
         />
         <div id="mobNav" class="md:w-full relative flex items-end justify-end">
           <button
             id="navButton"
-            class="
-              block
-              text-gray-700
-              rounded
-              p-2
-              border border-opacity-0 border-[#112968]
-              md:hidden
-              hover:border-opacity-100
-              focus:border focus:bg-gray-100
-            "
+            class="block text-gray-700 rounded p-2 border border-opacity-0 border-[#112968] md:hidden hover:border-opacity-100 focus:border focus:bg-gray-100"
             type="button"
           >
             <svg
@@ -123,28 +69,11 @@
 
           <ul
             id="list"
-            class="
-              absolute
-              font-thin
-              flex-col
-			  text-center
-              bg-red-100
-			  top-[-20px]
-			  w-40
-			  p-2
-              hidden
-              text-[#777777]
-              md:bg-white
-              md:justify-end
-              md:flex-wrap
-              md:w-full
-              md:basis-5/6
-              md:flex
-              md:flex-row
-              md:static
-            "
+            class="absolute font-thin flex-col text-center bg-red-100 top-[-20px] w-40 p-2 hidden text-[#777777] md:bg-white md:justify-end md:flex-wrap md:w-full md:basis-5/6 md:flex md:flex-row md:static"
           >
-		  <button id="navClose" class="absolute hidden right-2 top-[-1px]">x</button>
+            <button id="navClose" class="absolute hidden right-2 top-[-1px]">
+              x
+            </button>
 
             <li class="mx-3">
               <a class="active_page" href="./index.html">Home</a>
@@ -167,18 +96,9 @@
     <!-- Main  -->
     <main class="w-full h-fit mt-[5rem]">
       <section
-        class="
-          w-full
-          h-[39rem]
-          px-14
-          text-white
-          bg-[rgb(0,0,0,0.6)]
-          flex flex-col
-          justify-center
-          items-start
-        "
+        class="w-full h-[39rem] text-white bg-[rgb(0,0,0,0.6)] flex flex-col justify-center items-center"
       >
-        <h1 class="font-bold text-6xl text-blue-500">
+        <h1 class="font-bold text-6xl text-blue-500 text-center">
           Troubled with any technical issues?
         </h1>
         <h3 class="font-semibold m-2">Subheading</h3>
@@ -186,149 +106,74 @@
           Book Now
         </div>
       </section>
-      <section class="w-full h-[10rem] bg-[#f4f9fc]">
-        <ul class="w-full h-full flex font-bold items-center">
-          <li class="w-full h-4/5 basis-1/3 flex justify-center items-center">
+      <section class="w-full h-fit bg-white">
+        <ul
+          class="w-full h-full flex md:flex-row flex-col font-bold items-center md:p-5"
+        >
+          <li class="w-full py-2 basis-1/3 flex justify-center items-center">
             <div
-              class="
-                w-1/2
-                flex flex-col
-                justify-center
-                items-center
-                cursor-pointer
-                group
-                relative
-              "
+              class="w-full flex flex-col justify-center items-center cursor-pointer group relative"
             >
               <img
                 src="./images/workers.png"
                 alt="like"
-                width="70px"
-                class="
-                  group-hover:opacity-0 group-hover:invisible
-                  transition-all
-                "
+                width="60px"
+                class="group-hover:opacity-0 group-hover:invisible transition-all"
               />
               <div
-                class="
-                  text-center
-                  transition-all
-                  group-hover:opacity-0 group-hover:invisible
-                "
+                class="pt-4 text-center transition-all group-hover:opacity-0 group-hover:invisible"
               >
                 Top Technical Staffs
               </div>
               <div
-                class="
-                  absolute
-                  invisible
-                  opacity-0
-                  transition-all
-                  text-center
-                  group-hover:opacity-100 group-hover:visible
-                "
+                class="px-14 md:px-20 absolute invisible opacity-0 transition-all text-center group-hover:opacity-100 group-hover:visible"
               >
                 Our Technical team is ready to provide the best technical
                 service 365 days a year.
               </div>
             </div>
           </li>
-          <li
-            class="
-              w-full
-              h-full
-              basis-1/3
-              flex
-              justify-center
-              items-center
-              border-x-[0.05rem] border-solid border-[#777777]
-            "
-          >
+          <li class="w-full py-2 basis-1/3 flex justify-center items-center">
             <div
-              class="
-                w-1/2
-                flex flex-col
-                justify-center
-                items-center
-                cursor-pointer
-                group
-                relative
-              "
+              class="w-full flex flex-col justify-center items-center cursor-pointer group relative"
             >
               <img
                 src="./images/estimate.png"
                 alt="like"
-                width="70px"
-                class="
-                  group-hover:opacity-0 group-hover:invisible
-                  transition-all
-                "
+                width="60px"
+                class="group-hover:opacity-0 group-hover:invisible transition-all"
               />
               <div
-                class="
-                  text-center
-                  transition-all
-                  group-hover:opacity-0 group-hover:invisible
-                "
+                class="pt-4 text-center transition-all group-hover:opacity-0 group-hover:invisible"
               >
                 Free Estimate
               </div>
               <div
-                class="
-                  absolute
-                  invisible
-                  opacity-0
-                  transition-all
-                  text-center
-                  group-hover:opacity-100 group-hover:visible
-                "
+                class="px-10 md:px-20 absolute invisible opacity-0 transition-all text-center group-hover:opacity-100 group-hover:visible"
               >
                 We are ready and available to serve you. Call us now,
                 +977-9855012011, +977-9855053773
               </div>
             </div>
           </li>
-          <li class="w-full h-4/5 basis-1/3 flex justify-center items-center">
+          <li class="w-full py-2 basis-1/3 flex justify-center items-center">
             <div
-              class="
-                w-1/2
-                flex flex-col
-                justify-center
-                items-center
-                cursor-pointer
-                group
-                relative
-                ease-in-out
-                delay-500
-              "
+              class="w-full flex flex-col justify-center items-center cursor-pointer group relative ease-in-out delay-500"
             >
               <img
                 src="./images/calendar.png"
                 alt="like"
-                width="70px"
-                class="
-                  group-hover:opacity-0 group-hover:invisible
-                  transition-all
-                "
+                width="60px"
+                class="group-hover:opacity-0 group-hover:invisible transition-all"
               />
               <div
-                class="
-                  group-hover:opacity-0 group-hover:invisible
-                  transition-all
-                "
+                class="pt-4 text-center group-hover:opacity-0 group-hover:invisible transition-all"
               >
                 Available 365 days a year
               </div>
 
               <div
-                class="
-                  absolute
-                  invisible
-                  opacity-0
-                  text-center
-                  transition-all
-                  group-hover:opacity-100 group-hover:visible
-                "
+                class="px-14 md:px-20 absolute invisible opacity-0 text-center transition-all group-hover:opacity-100 group-hover:visible"
               >
                 Our Technical is ready to provide the best technical service 365
                 days a year.
@@ -337,15 +182,106 @@
           </li>
         </ul>
       </section>
-      <h1 class="text-center bg-white pt-14 pb-5 font-bold text-[2rem]">
-        Why
-        <!-- <span class="text-blue-600 text-[2.2rem]">Nexus</span>
-		<span class="text-red-600">Tech Solution</span> ?-->
-        Nexus Tech Solution
-      </h1>
+      <div class="bg-blue-300 w-full">
+        <div class=" container w-full pt-24 px-6 mx-auto">
+          <section class="mb-20">
+            <div class="flex flex-wrap">
+              <div
+                class="grow-0 shrink-0 basis-auto w-full lg:w-5/12 mb-12 lg:mb-0"
+              >
+                <div class="flex lg:py-12">
+                  <img
+                    src="./images/nexus1.jpg"
+                    class="w-full rounded-lg shadow-2xl md:ml-[50px] border-blue-500 border-solid"
+                    style="z-index: 10"
+                    alt=""
+                  />
+                </div>
+              </div>
 
-      <div class="bg-white w-full">
-        <section class="bg-white basis-1/2 flex justify-center items-center">
+              <div class="grow-0 shrink-0 basis-auto w-full lg:w-7/12">
+                <div
+                  class="bg-red-500 h-full rounded-lg p-6 lg:pl-12 text-white flex items-center text-center lg:text-left"
+                >
+                  <div class="lg:pl-12">
+                    <h2 class="text-3xl font-bold mb-6">
+                      Why Nexus Tech Solution?
+                    </h2>
+                    <p class="mb-6 pb-2 lg:pb-0">
+                      Our highly trained and skilled Technicians provide quality
+                      workmanship under International Electrical Standards. Just
+                      A click away.
+                    </p>
+
+                    <div
+                      class="flex flex-col md:flex-row md:justify-around xl:justify-start mb-6 mx-auto"
+                    >
+                      <p
+                        class="flex items-center mb-4 md:mb-2 lg:mb-0 mx-auto md:mx-0 xl:mr-20"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 512 512"
+                          class="w-4 h-4 mr-2"
+                        >
+                          <path
+                            fill="currentColor"
+                            d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"
+                          ></path>
+                        </svg>
+                        Best team
+                      </p>
+
+                      <p
+                        class="flex items-center mb-4 md:mb-2 lg:mb-0 mx-auto md:mx-0 xl:mr-20"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 512 512"
+                          class="w-4 h-4 mr-2"
+                        >
+                          <path
+                            fill="currentColor"
+                            d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"
+                          ></path>
+                        </svg>
+                        Best quality
+                      </p>
+
+                      <p class="flex items-center mb-2 lg:mb-0 mx-auto md:mx-0">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 512 512"
+                          class="w-4 h-4 mr-2"
+                        >
+                          <path
+                            fill="currentColor"
+                            d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"
+                          ></path>
+                        </svg>
+                        Best experience
+                      </p>
+                    </div>
+
+                    <p>
+                      Backed with immense years of industry experience and
+                      market understanding, we bring forth for our clients a
+                      wide gamut of Advance technical solutions <br />Moreover,
+                      we are engaged in proffering Commercial Construction, Site
+                      Surveys and Installation in Industry Sectors Services
+                      <br />In addition to the workspace, we have recruited a
+                      workforce that strives to accomplish the organizational
+                      objectives, with increased efficiency
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+        <section
+          class="px-14 bg-blue-300 basis-1/2 flex justify-center items-center"
+        >
           <div class="w-full flex flex-wrap justify-evenly p-8">
             <div class="whyUs">
               <img
@@ -422,20 +358,8 @@
             </div>
           </div>
         </section>
-        <section class="basis-1/2 flex justify-center items-center">
-          <p class="m-10 text-center">
-            Our highly trained and skilled Technicians provide quality
-            workmanship under International Electrical Standards.
-            <br />Just A click away, <br />Backed with immense years of industry
-            experience and market understanding, we bring forth for our clients
-            a wide gamut of Advance technical solutions <br />Moreover, we are
-            engaged in proffering Commercial Construction, Site Surveys and
-            Installation in Industry Sectors Services <br />In addition to the
-            workspace, we have recruited a workforce that strives to accomplish
-            the organizational objectives, with increased efficiency
-          </p>
-        </section>
       </div>
+      <!-- Container for demo purpose -->
     </main>
 
     <!-- Main end  -->
