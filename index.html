@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" class="p-0 m-0 scroll-smooth">
   <head>
-    <title></title>
+    <title>Nexus</title>
 
     <!--Meta Contents-->
 
@@ -23,6 +23,31 @@
     <script src="https://use.fontawesome.com/3ee3faf1dc.js"></script>
 
     <link rel="stylesheet" href="style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ["Inter", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
   </head>
   <body
     class="w-screen h-screen max-w-full bg-[url('./images/bg_blurred.jpg')] bg-no-repeat bg-cover bg-fixed bg-center font-sans"
@@ -94,7 +119,9 @@
     </header>
     <!-- Header End  -->
     <!-- Main  -->
+
     <main class="w-full h-fit mt-[5rem]">
+      <!-- Front -->
       <section
         class="w-full h-[39rem] text-white bg-[rgb(0,0,0,0.6)] flex flex-col justify-center items-center"
       >
@@ -106,6 +133,8 @@
           Book Now
         </div>
       </section>
+
+      <!-- Features -->
       <section class="w-full h-fit bg-white">
         <ul
           class="w-full h-full flex md:flex-row flex-col font-bold items-center md:p-5"
@@ -182,29 +211,77 @@
           </li>
         </ul>
       </section>
+
+      <!-- Blue BG -->
       <div class="bg-blue-300 w-full">
-        <div class=" container w-full pt-24 px-6 mx-auto">
+        <!-- Why Us  -->
+        <div class="container w-full pt-24 px-6 mx-auto">
           <section class="mb-20">
             <div class="flex flex-wrap">
+              <!-- Corousel -->
+
               <div
-                class="grow-0 shrink-0 basis-auto w-full lg:w-5/12 mb-12 lg:mb-0"
+                class="grow-0 flex justify-center items-center shrink-0 basis-auto w-full lg:w-5/12 mb-12 lg:mb-0"
               >
-                <div class="flex lg:py-12">
-                  <img
-                    src="./images/nexus1.jpg"
-                    class="w-full rounded-lg shadow-2xl md:ml-[50px] border-blue-500 border-solid"
-                    style="z-index: 10"
-                    alt=""
-                  />
+                <div class="">
+                  <div
+                    id="carouselExampleControls"
+                    class="carousel slide relative w-full lg:left-[50px]"
+                    data-bs-ride="carousel"
+                  >
+                    <div
+                      class="carousel-inner relative w-full rounded-lg overflow-hidden"
+                    >
+                      <div
+                        class="carousel-item active relative float-left w-full"
+                      >
+                        <img src="./images/nexus1.jpg" alt="" />
+                      </div>
+                      <div class="carousel-item relative float-left w-full">
+                        <img src="./images/nexus1.jpg" alt="" />
+                      </div>
+                      <div class="carousel-item relative float-left w-full">
+                        <img src="./images/nexus1.jpg" alt="" />
+                      </div>
+                    </div>
+
+                    <button
+                      class="carousel-control-prev absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline left-0"
+                      type="button"
+                      data-bs-target="#carouselExampleControls"
+                      data-bs-slide="prev"
+                    >
+                      <span
+                        class="carousel-control-prev-icon inline-block bg-no-repeat"
+                        aria-hidden="true"
+                      ></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button
+                      class="carousel-control-next absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline right-0"
+                      type="button"
+                      data-bs-target="#carouselExampleControls"
+                      data-bs-slide="next"
+                    >
+                      <span
+                        class="carousel-control-next-icon inline-block bg-no-repeat"
+                        aria-hidden="true"
+                      ></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+
+                  <!---->
                 </div>
               </div>
 
+              <!-- Why nexus -->
               <div class="grow-0 shrink-0 basis-auto w-full lg:w-7/12">
                 <div
-                  class="bg-red-500 h-full rounded-lg p-6 lg:pl-12 text-white flex items-center text-center lg:text-left"
+                  class="bg-red-500 h-full rounded-lg p-6 lg:px-12 text-white flex items-center text-center lg:text-xl lg:text-left"
                 >
-                  <div class="lg:pl-12">
-                    <h2 class="text-3xl font-bold mb-6">
+                  <div class="lg:p-12">
+                    <h2 class="lg:text-3xl font-bold mb-6">
                       Why Nexus Tech Solution?
                     </h2>
                     <p class="mb-6 pb-2 lg:pb-0">
@@ -279,6 +356,8 @@
             </div>
           </section>
         </div>
+
+        <!-- List of features -->
         <section
           class="px-14 bg-blue-300 basis-1/2 flex justify-center items-center"
         >
@@ -425,4 +504,5 @@
 
   <script src="https://smtpjs.com/v3/smtp.js"></script>
   <script src="app.js"></script>
+  <script src="./node_modules/tw-elements/dist/js/index.min.js"></script>
 </html>
