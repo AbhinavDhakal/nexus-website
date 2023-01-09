@@ -3663,6 +3663,10 @@ textarea.form-control.is-invalid {
   margin-top: 0.5rem;
 }
 
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
 .ml-4 {
   margin-left: 1rem;
 }
@@ -3689,10 +3693,6 @@ textarea.form-control.is-invalid {
 
 .mb-12 {
   margin-bottom: 3rem;
-}
-
-.mb-4 {
-  margin-bottom: 1rem;
 }
 
 .mb-2 {
@@ -3763,6 +3763,10 @@ textarea.form-control.is-invalid {
   height: 4rem;
 }
 
+.h-full {
+  height: 100%;
+}
+
 .h-fit {
   height: -moz-fit-content;
   height: fit-content;
@@ -3774,10 +3778,6 @@ textarea.form-control.is-invalid {
 
 .h-\[39rem\] {
   height: 39rem;
-}
-
-.h-full {
-  height: 100%;
 }
 
 .h-4 {
@@ -3844,16 +3844,16 @@ textarea.form-control.is-invalid {
   max-width: 100%;
 }
 
-.max-w-\[150px\] {
-  max-width: 150px;
+.max-w-\[200px\] {
+  max-width: 200px;
 }
 
 .max-w-screen-xl {
   max-width: 1280px;
 }
 
-.max-w-\[200px\] {
-  max-width: 200px;
+.max-w-\[250px\] {
+  max-width: 250px;
 }
 
 .max-w-\[510px\] {
@@ -3900,9 +3900,9 @@ textarea.form-control.is-invalid {
   flex-basis: auto;
 }
 
-.scale-75 {
-  --tw-scale-x: .75;
-  --tw-scale-y: .75;
+.scale-90 {
+  --tw-scale-x: .9;
+  --tw-scale-y: .9;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -4173,10 +4173,6 @@ textarea.form-control.is-invalid {
   padding: 0.5rem;
 }
 
-.p-10 {
-  padding: 2.5rem;
-}
-
 .p-8 {
   padding: 2rem;
 }
@@ -4189,16 +4185,12 @@ textarea.form-control.is-invalid {
   padding: 1.5rem;
 }
 
+.p-10 {
+  padding: 2.5rem;
+}
+
 .p-4 {
   padding: 1rem;
-}
-
-.p-20 {
-  padding: 5rem;
-}
-
-.p-24 {
-  padding: 6rem;
 }
 
 .px-5 {
@@ -4219,6 +4211,16 @@ textarea.form-control.is-invalid {
 .py-\[2rem\] {
   padding-top: 2rem;
   padding-bottom: 2rem;
+}
+
+.py-10 {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.px-24 {
+  padding-left: 6rem;
+  padding-right: 6rem;
 }
 
 .py-16 {
@@ -4281,18 +4283,17 @@ textarea.form-control.is-invalid {
   padding-right: 0.5rem;
 }
 
-.py-10 {
-  padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
-}
-
-.px-24 {
-  padding-left: 6rem;
-  padding-right: 6rem;
+.px-1 {
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
 }
 
 .pt-\[2rem\] {
   padding-top: 2rem;
+}
+
+.pt-5 {
+  padding-top: 1.25rem;
 }
 
 .pb-4 {
@@ -4335,10 +4336,6 @@ textarea.form-control.is-invalid {
   padding-bottom: 0.5rem;
 }
 
-.pt-5 {
-  padding-top: 1.25rem;
-}
-
 .text-left {
   text-align: left;
 }
@@ -4369,14 +4366,19 @@ textarea.form-control.is-invalid {
   line-height: 1rem;
 }
 
-.text-sm {
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-}
-
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
 }
 
 .text-lg {
@@ -4394,11 +4396,6 @@ textarea.form-control.is-invalid {
   line-height: 2.5rem;
 }
 
-.text-2xl {
-  font-size: 1.5rem;
-  line-height: 2rem;
-}
-
 .text-6xl {
   font-size: 3.75rem;
   line-height: 1;
@@ -4407,6 +4404,18 @@ textarea.form-control.is-invalid {
 .text-base {
   font-size: 1rem;
   line-height: 1.5rem;
+}
+
+.text-\[0\.5rem\] {
+  font-size: 0.5rem;
+}
+
+.text-\[0\.4rem\] {
+  font-size: 0.4rem;
+}
+
+.text-\[0\.3rem\] {
+  font-size: 0.3rem;
 }
 
 .font-medium {
@@ -4829,6 +4838,25 @@ table {
     font-size: 2.25rem;
     line-height: 2.5rem;
   }
+
+  .sm\:text-xs {
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
+
+  .sm\:text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+
+  .sm\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
+  .sm\:font-medium {
+    font-weight: 500;
+  }
 }
 
 @media (min-width: 768px) {
@@ -4910,6 +4938,15 @@ table {
 
   .md\:text-\[40px\] {
     font-size: 40px;
+  }
+
+  .md\:text-xs {
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
+
+  .md\:font-medium {
+    font-weight: 500;
   }
 }
 

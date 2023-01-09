@@ -14,11 +14,11 @@ function stickyNav() {
   if (window.pageYOffset > sticky) {
     navbar.classList.add("fixed", "h-14");
     navbar.classList.remove("h-20");
-    logo.classList.add("scale-75");
+    logo.classList.add("scale-90");
   } else {
     navbar.classList.add("h-20");
     navbar.classList.remove("h-14");
-    logo.classList.remove("scale-75");
+    logo.classList.remove("scale-90");
   }
 }
 
