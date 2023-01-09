@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" class="p-0 m-0 scroll-smooth">
   <head>
-    <title></title>
+    <title>Nexus</title>
 
     <!--Meta Contents-->
 
@@ -19,122 +19,366 @@
     />
     <link rel="stylesheet" href="https://use.typekit.net/sph8lvt.css" />
 
-    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://use.fontawesome.com/3ee3faf1dc.js"></script>
 
     <link rel="stylesheet" href="output.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+    />
   </head>
-  <body class="w-screen h-screen max-w-full">
+  <body
+    class="w-screen h-screen max-w-full bg-[url('./images/bg_blurred.jpg')] bg-no-repeat bg-cover bg-fixed bg-center font-sans"
+  >
     <!-- Header  -->
     <header>
       <section
-        class="w-full h-10 top-0 fixed bg-[#112968] flex items-center justify-end text-white font-medium"
+        class="w-full h-10 top-0 fixed bg-[#112968] flex items-center justify-end font-sans text-white text-md font-medium z-50"
       >
-        <span class="mr-5">989898989</span>
-        <span class="mr-5">howhowhow@gmail.com</span>
+        <span class="mr-5"
+          ><a href="tel:9861203022"
+            ><i class="fa fa-phone mr-2"></i>9861203022</a
+          ></span
+        >
+        |
+        <span class="mx-5"
+          ><a href="tel:9855012011"
+            ><i class="fa fa-phone mr-2"></i>9855012011</a
+          ></span
+        >
+        |
+        <span class="mx-5"
+          ><a href="mailto:info.nelectrical@gmail.com">
+            <i class="fa-regular fa-envelope mr-2"></i>
+            info.nelectrical@gmail.com</a
+          ></span
+        >
       </section>
       <nav
         id="navbar"
-        class="w-full h-20 px-5 py-2 bg-white font-medium fixed top-10 text-[1.125rem] flex justify-between items-center transition-all ease-linear duration-300 delay-0 shadow-[0_2px_6px_0_rgba(0,0,0,.12),inset_0_-1px_0_0_#dadce0]"
+        class="w-full h-20 z-50 px-5 py-2 bg-white font-medium fixed top-10 text-[1.125rem] flex justify-between items-center transition-all ease-linear duration-300 delay-0 shadow-[0_2px_6px_0_rgba(0,0,0,.12),inset_0_-1px_0_0_#dadce0]"
       >
         <img
           src="./images/logo2.png"
           alt="nexus logo"
           id="logo"
-          class="basis-1/6 max-w-[150px] mx-4 my-1 transition-transform ease-linear duration-300 delay-0"
+          class="basis-1/2 max-w-[150px] mx-4 my-1 transition-transform ease-linear duration-300 delay-0"
         />
-        <ul
-          id="list"
-          class="w-full font-thin text-[#777777] basis-5/6 flex justify-end flex-wrap"
-        >
-          <li class="mx-5">
-            <a class="" href="./index.html">Home</a>
-          </li>
-          <li class="mx-5">
-            <a class="active_page" href="./services.html">Services</a>
-          </li>
-          <li class="mx-5"><a class="" href="./projects.html">Projects</a></li>
-          <li class="mx-5"><a class="" href="./aboutus.html">About Us</a></li>
-          <li class="ml-5">
-            <a class="" href="./contactus.html">Contact Us</a>
-          </li>
-        </ul>
+        <div id="mobNav" class="md:w-full relative flex items-end justify-end">
+          <button
+            id="navButton"
+            class="block text-gray-700 rounded p-2 border border-opacity-0 border-[#112968] md:hidden hover:border-opacity-100 focus:border focus:bg-gray-100"
+            type="button"
+          >
+            <svg
+              class="w-6 h-5"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              ></path>
+            </svg>
+          </button>
+
+          <ul
+            id="list"
+            class="absolute font-thin flex-col text-center bg-red-100 top-[-20px] w-40 p-2 hidden text-[#777777] md:bg-white md:justify-end md:flex-wrap md:w-full md:basis-5/6 md:flex md:flex-row md:static"
+          >
+            <button id="navClose" class="absolute hidden right-2 top-[-1px]">
+              x
+            </button>
+
+            <li class="mx-3">
+              <a class="" href="./index.html">Home</a>
+            </li>
+            <li class="mx-3">
+              <a class="active_page" href="./services.html">Services</a>
+            </li>
+            <li class="mx-3">
+              <a class="" href="./amc.html">AMC</a>
+            </li>
+            <li class="mx-3"><a class="" href="./aboutus.html">About Us</a></li>
+            <li class="mx-3">
+              <a class="" href="./contactus.html">Contact Us</a>
+            </li>
+          </ul>
+        </div>
       </nav>
     </header>
     <!-- Header End  -->
-    <!-- Main  -->
-    <main class="w-3/4 mt-[8rem] m-auto">
-      <h2 class="text-5xl">Our Services:</h2>
-      <ul>
-        <li>
-          <h3>Electrical Contracting</h3>
-          <p>
-            We perform specialized construction work related to the design,
-            installation, and maintenance of electrical systems
-          </p>
-        </li>
-        <li>
-          <p>Energy Auditing</p>
-          <p>
-            We carry out inspection survey and an analysis of energy flows for
-            energy conservation in a building to reduce the amount of energy
-            input into the system without negatively affecting the output
-          </p>
-        </li>
-        <li>
-          <p>Panel Board Fabricating</p>
-          <p>
-            custom design and fabrication of electrical panels which are
-            engineered and pre-built to strict specifications based on designs
-            documentation created by our Engineering team.
-          </p>
-        </li>
-        <li>
-          <p>Electrical Designing</p>
-          <p>
-            We provide electrical designs for planning and creating electrical
-            equipment, such as electrical components, schematics, lighting
-            equipment, power systems, and telecommunications infrastructure
-          </p>
-        </li>
-        <li>
-          <p>Automation systems</p>
-          <p>
-            We work with engineered systems that range from custom-designed,
-            bundled components to large, turnkey system integration projects
-          </p>
-          <p><br /></p>
-        </li>
-        <li>
-          <p>Security and Alarm Systems</p>
-          <p>
-            Security alarms used in residential, commercial, industrial, and
-            military properties for protection against burglary or property
-            damage, as well as personal protection against intruders
-          </p>
-        </li>
-        <li>
-          <p>Technical Maintenance</p>
-          <p>
-            There's nothing we aren't involved in technical sector from
-            residential, commercial and industrial maintenances to Engineered
-            and structured preventive, routine and emergency maintenances of
-            Machines and Generator sets, our technical team is skilled,
-            experienced and willing to serve you.
-          </p>
-        </li>
-        <li>
-          <p>Engineering consulting</p>
-        </li>
-      </ul>
-      <p>
-        Our comprehensive services include energy audits, demand assessment,
-        supply and system resilience, utilities consultancy and sustainable
-        electrical engineering design
-      </p>
+
+    <main class="bg-white w-full mt-[5rem] pt-[2rem]">
+      <section class="px-4 py-[2rem] shadow-lg">
+        <h1 class="text-5xl font-bold leading-tight text-center text-gray-800">
+          Our Services
+        </h1>
+        <hr class="w-48 h-1 mx-auto mt-1 border-0 rounded bg-[#EF4444]" />
+      </section>
+
+      <div class="flex flex-wrap items-stretch p-10 bg-blue-200">
+        <div class="w-full h-full sm:w-1/2 lg:w-1/3 p-4">
+          <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+            <img
+              src="./images/services_contracting.jpeg"
+              alt="Electrical Contracting"
+              class="w-full h-72 object-cover object-center"
+            />
+            <div class="p-4">
+              <h3 class="text-xl font-bold text-red-500">
+                Electrical Contracting
+              </h3>
+              <p class="text-gray-600 text-base">
+                We provide professional electrical contracting services for
+                residential, commercial, and industrial properties.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="w-full h-full sm:w-1/2 lg:w-1/3 p-4">
+          <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+            <img
+              src="./images/services_consulting.jpeg"
+              alt="Electrical Designing & Consulting"
+              class="w-full h-72 object-cover object-center"
+            />
+            <div class="p-4">
+              <h3 class="text-xl font-bold text-red-500">
+                Electrical Designing & Consulting
+              </h3>
+              <p class="text-gray-600 text-base">
+                Our team of experienced electrical designers can help you plan
+                and design your electrical systems.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="w-full h-full sm:w-1/2 lg:w-1/3 p-4">
+          <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+            <img
+              src="./images/services_panel.jpg"
+              alt="Panel Board Fabricating"
+              class="w-full h-72 object-cover object-center"
+            />
+            <div class="p-4">
+              <h3 class="text-xl font-bold text-red-500">
+                Panel Board Fabricating
+              </h3>
+              <p class="text-gray-600 text-base">
+                We fabricate high-quality panel boards to meet your specific
+                electrical needs.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="w-full h-full sm:w-1/2 lg:w-1/3 p-4">
+          <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+            <img
+              src="./images/services_amc.jpeg"
+              alt="Technical Maintenance & AMC"
+              class="w-full h-72 object-cover object-center"
+            />
+            <div class="p-4">
+              <h3 class="text-xl font-bold text-red-500">
+                Technical Maintenance & AMC
+              </h3>
+              <p class="text-gray-600 text-base">
+                Our team provides technical maintenance and annual maintenance
+                contracts to ensure your electrical systems are running
+                smoothly.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="w-full h-full sm:w-1/2 lg:w-1/3 p-4">
+          <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+            <img
+              src="./images/services_htline.jpeg"
+              alt="LT & HT Line"
+              class="w-full h-72 object-cover object-center"
+            />
+            <div class="p-4">
+              <h3 class="text-xl font-bold text-red-500">LT & HT Line</h3>
+              <p class="text-gray-600 text-base">
+                We specialize in installation, repair, and maintenance of low
+                tension (LT) and high tension (HT) electrical lines.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="w-full h-full sm:w-1/2 lg:w-1/3 p-4">
+          <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+            <img
+              src="./images/services_accessories.png"
+              alt="Electrical Accessories"
+              class="w-full h-72 object-cover object-center"
+            />
+            <div class="p-4">
+              <h3 class="text-xl font-bold text-red-500">
+                Electrical Accessories & Machinery Items
+              </h3>
+              <p class="text-gray-600 text-base">
+                We offer a variety of industrial and electrical products for all
+                properties.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <section class="px-4 py-[2rem] bg-blue-200 shadow-lg">
+        <h1 class="text-3xl font-bold leading-tight text-center text-gray-800">
+          <a class="text-5xl" href="./contactus.html">
+            Contact us
+            <hr class="w-48 h-1 mx-auto mt-1 border-0 rounded bg-[#EF4444]" />
+          </a>
+          to know more about our services.
+        </h1>
+      </section>
     </main>
 
-    <!-- Main end  -->
+    <!--Footer-->
+    <footer>
+      <!-- Map -->
+
+      <div class="bg-[#f4f9fc] flex flex-col justify-center items-center p-5">
+        <h2 class="text-center text-5xl font-bold">Our Location</h2>
+        <hr
+          class="w-48 h-1 mx-auto mt-2 mb-5 border-0 rounded md:mt-3 md:mb-10 bg-[#EF4444]"
+        />
+        <iframe
+          class="border-[#112968] border-4 border-solid md:w-[80%] w-[95%]"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3533.2788910760164!2d84.41478751458186!3d27.6777738828041!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3994fba2aa22313d%3A0xe06fafe731ca7c3c!2sNexus%20Electrical%20Engineering%20Pvt%20Ltd!5e0!3m2!1sen!2snp!4v1673136412192!5m2!1sen!2snp"
+          height="300"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+
+      <!-- main footer-->
+
+      <section class="bg-[#191919] w-full flex lg:flex-row flex-col text-white">
+        <div
+          class="basis-1/3 bg-[#222222] flex justify-center items-center flex-col py-5"
+        >
+          <div>
+            <h3 class="font-extrabold text-xl pb-4">Get in touch</h3>
+            <ul class="text-gray-400 font-semibold text-lg">
+              <li class="py-2">
+                <i class="text-red-500 fa fa-phone mr-2"></i>9846898848,
+                9818819420
+              </li>
+              <li class="py-2">
+                <i class="text-red-500 fa-regular fa-envelope mr-2"></i>
+                <a href="mailto:infor@nexuselectrical.com.np"
+                  >info@dharabijuli.com</a
+                >
+              </li>
+              <li class="py-2">
+                <i class="text-red-500 fa-solid fa-location-dot mr-2"></i>
+                Tinkune, Kathmandu 44600, Nepal
+              </li>
+            </ul>
+            <h4 class="py-4 font-bold text-xl">Business Hours</h4>
+            <div class="text-gray-400 text-lg">
+              <i class="text-red-500 mr-2 fa-regular fa-clock"></i>
+              <span class="font-semibold">Sun - Sat: </span>7:30am - 6:00pm
+            </div>
+          </div>
+        </div>
+        <div
+          class="basis-1/3 flex flex-col justify-center items-start text-justify p-5"
+        >
+          <img
+            src="./images/logo2.png"
+            alt="nexus logo"
+            id="logo"
+            class="max-w-[200px]"
+          />
+          <p class="my-2">
+            Nexus Electrical Engineering was established to provide reliable and
+            affordable technical services of engineering standards with the help
+            of a dynamic, experienced and highly trained technical team. We make
+            sure we have all the latest...
+          </p>
+          <a href="aboutus.html" class="text-blue-800 hover:cursor-pointer"
+            >Read More >></a
+          >
+          <ul class="w-full flex justify-evenly mt-5">
+            <li
+              class="h-10 w-10 rounded-full bg-red-500 flex justify-center items-center hover:cursor-pointer hover:bg-red-700"
+            >
+              <a href="facebook.com">
+                <i class="fa-brands fa-facebook-f"></i>
+              </a>
+            </li>
+            <li
+              class="h-10 w-10 rounded-full bg-red-500 flex justify-center items-center hover:cursor-pointer hover:bg-red-700"
+            >
+              <a href="instagram.com"><i class="fa-brands fa-instagram"></i></a>
+            </li>
+            <li
+              class="h-10 w-10 rounded-full bg-red-500 flex justify-center items-center hover:cursor-pointer hover:bg-red-700"
+            >
+              <a href="twitter.com"><i class="fa-brands fa-twitter"></i></a>
+            </li>
+            <li
+              class="h-10 w-10 rounded-full bg-red-500 flex justify-center items-center hover:cursor-pointer hover:bg-red-700"
+            >
+              <a href="whatsapp.com"><i class="fa-brands fa-whatsapp"></i></a>
+            </li>
+          </ul>
+        </div>
+        <div
+          class="basis-1/3 bg-[#222222] flex justify-center flex-col py-5 px-auto"
+        >
+          <div class="px-28">
+            <h3 class="font-extrabold text-xl pb-4">Quick Links</h3>
+            <ul class="text-gray-400 font-semibold text-lg">
+              <li class="my-3 hover:ml-2 hover:text-red-600 transition-all">
+                <a class="" href="./index.html">> Home</a>
+              </li>
+              <li class="my-3 hover:ml-2 hover:text-red-600 transition-all">
+                <a class="" href="./services.html">> Services</a>
+              </li>
+              <li class="my-3 hover:ml-2 hover:text-red-600 transition-all">
+                <a class="" href="./amc.html">> AMC</a>
+              </li>
+              <li class="my-3 hover:ml-2 hover:text-red-600 transition-all">
+                <a class="" href="./aboutus.html">> About Us</a>
+              </li>
+              <li class="my-3 hover:pl-2 hover:text-red-600 transition-all">
+                <a class="" href="./contactus.html">> Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <!-- Credits -->
+      <section
+        class="h-10 bg-white text-gray-500 flex justify-around items-center font-bold font-sans text-lg"
+      >
+        <span>© 2023 Nexus Tech Solutions. All Rights Reserved </span>
+        <span>
+          Made with <i class="mx-1 text-xl text-red-800 fa fa-heart"></i> by
+          Abhinav and Srijan</span
+        >
+      </section>
+    </footer>
   </body>
 
   <script src="app.js"></script>
+  <script src="./tw-elements/dist/js/index.min.js"></script>
 </html>
