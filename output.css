@@ -3638,6 +3638,11 @@ textarea.form-control.is-invalid {
   margin-right: 0.25rem;
 }
 
+.mx-10 {
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
+}
+
 .my-8 {
   margin-top: 2rem;
   margin-bottom: 2rem;
@@ -4243,6 +4248,11 @@ textarea.form-control.is-invalid {
   padding-right: 7rem;
 }
 
+.px-1 {
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+}
+
 .py-8 {
   padding-top: 2rem;
   padding-bottom: 2rem;
@@ -4281,11 +4291,6 @@ textarea.form-control.is-invalid {
 .px-2 {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
-}
-
-.px-1 {
-  padding-left: 0.25rem;
-  padding-right: 0.25rem;
 }
 
 .pt-\[2rem\] {
@@ -4344,12 +4349,20 @@ textarea.form-control.is-invalid {
   text-align: center;
 }
 
+.text-right {
+  text-align: right;
+}
+
 .text-justify {
   text-align: justify;
 }
 
 .font-sans {
   font-family: Inter, sans-serif;
+}
+
+.text-\[0\.4rem\] {
+  font-size: 0.4rem;
 }
 
 .text-\[1\.125rem\] {
@@ -4406,24 +4419,12 @@ textarea.form-control.is-invalid {
   line-height: 1.5rem;
 }
 
-.text-\[0\.5rem\] {
-  font-size: 0.5rem;
-}
-
-.text-\[0\.4rem\] {
-  font-size: 0.4rem;
-}
-
-.text-\[0\.3rem\] {
-  font-size: 0.3rem;
+.font-thin {
+  font-weight: 100;
 }
 
 .font-medium {
   font-weight: 500;
-}
-
-.font-thin {
-  font-weight: 100;
 }
 
 .font-bold {
@@ -4834,16 +4835,6 @@ table {
     padding-right: 1.5rem;
   }
 
-  .sm\:text-4xl {
-    font-size: 2.25rem;
-    line-height: 2.5rem;
-  }
-
-  .sm\:text-xs {
-    font-size: 0.75rem;
-    line-height: 1rem;
-  }
-
   .sm\:text-sm {
     font-size: 0.875rem;
     line-height: 1.25rem;
@@ -4852,6 +4843,11 @@ table {
   .sm\:text-lg {
     font-size: 1.125rem;
     line-height: 1.75rem;
+  }
+
+  .sm\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
   }
 
   .sm\:font-medium {
@@ -4936,17 +4932,13 @@ table {
     padding-right: 3.5rem;
   }
 
+  .md\:px-10 {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+
   .md\:text-\[40px\] {
     font-size: 40px;
-  }
-
-  .md\:text-xs {
-    font-size: 0.75rem;
-    line-height: 1rem;
-  }
-
-  .md\:font-medium {
-    font-weight: 500;
   }
 }
 
